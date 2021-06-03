@@ -10,8 +10,6 @@ AdminLTE Templates for InfyOm Laravel Generator
 
 ## Inclusion in IM projects
 
-Run `composer require infyomlabs/adminlte-templates:dev-develop`
-
 Add this entry in `composer.json` :
 
 ```
@@ -22,5 +20,7 @@ Add this entry in `composer.json` :
         }
     ],
 ```
+
+Run `composer require infyomlabs/adminlte-templates:dev-develop`
 
 Enjoy !
