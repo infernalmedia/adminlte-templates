@@ -7,10 +7,11 @@ Templates for [AdminLTE Theme](https://adminlte.io/) for InfyOm Laravel Generato
 ## Documentation
 
 Read [Documentation](https://infyom.com/open-source/laravelgenerator/docs/8.0/adminlte-templates) for detailed installation steps and usage.
-
 ## Inclusion in IM projects
 
-Add this entry in `composer.json` :
+Update to this entry : `infyomlabs/adminlte-templates:inertia-table-laravel10`
+
+And add this entry in `composer.json` :
 
 ```
 "repositories": [
