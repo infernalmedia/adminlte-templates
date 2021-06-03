@@ -1,15 +1,18 @@
 <!-- $FIELD_NAME_TITLE$ Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('$FIELD_NAME$', '$FIELD_NAME_TITLE$:') !!}
+    {!! Form::label('$FIELD_NAME$', '$FIELD_NAME_TITLE$:', ['class' => 'col-form-label']) !!}
+    <div class="input-group-prepend">
+        <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+    </div>
     {!! Form::text('$FIELD_NAME$', null, ['class' => 'form-control','id'=>'$FIELD_NAME$']) !!}
 </div>
 
-@push('page_scripts')
+@push('scripts')
     <script type="text/javascript">
         $('#$FIELD_NAME$').datetimepicker({
             format: 'YYYY-MM-DD HH:mm:ss',
             useCurrent: true,
             sideBySide: true
-        })
+        });
     </script>
 @endpush

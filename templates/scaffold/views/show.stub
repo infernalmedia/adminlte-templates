@@ -1,31 +1,21 @@
-@extends('layouts.app')
+@extends('adminlte::page')
+
+@section('content_header')
+<h1>
+    $MODEL_NAME_HUMAN$
+</h1>
+<div>
+    <a class="btn btn-secondary" href="{{ route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.index') }}">
+        <i class="fa fa-arrow-left mr-2"></i> Back to list
+    </a>
+</div>
+@endsection
 
 @section('content')
-    <section class="content-header">
-        <div class="container-fluid">
-            <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1>$MODEL_NAME_HUMAN$ Details</h1>
-                </div>
-                <div class="col-sm-6">
-                    <a class="btn btn-default float-right"
-                       href="{{ route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.index') }}">
-                        Back
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="content px-3">
-        <div class="card">
-
-            <div class="card-body">
-                <div class="row">
-                    @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.show_fields')
-                </div>
-            </div>
-
-        </div>
+<div class="row">
+    <div class="col">
+        @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.show_fields')
+        <a href="{{ route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.index') }}" class="btn btn-secondary">Back</a>
     </div>
+</div>
 @endsection

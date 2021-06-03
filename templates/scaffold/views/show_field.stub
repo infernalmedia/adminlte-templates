@@ -1,5 +1,5 @@
 <!-- $FIELD_NAME_TITLE$ Field -->
-<div class="col-sm-12">
-    {!! Form::label('$FIELD_NAME$', '$FIELD_NAME_TITLE$:') !!}
+<div class="form-group">
+    {!! Form::label('$FIELD_NAME$', '$FIELD_NAME_TITLE$:', ['class' => 'col-form-label']) !!}
     <p>{{ $$MODEL_NAME_CAMEL$->$FIELD_NAME$ }}</p>
 </div>
