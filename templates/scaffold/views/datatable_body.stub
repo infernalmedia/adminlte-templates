@@ -1,10 +1,14 @@
-@push('third_party_stylesheets')
+{{-- @section('css')
     @include('layouts.datatables_css')
-@endpush
+@endsection --}}
 
-{!! $dataTable->table(['width' => '100%', 'class' => 'table table-striped table-bordered']) !!}
+<div class="card">
+    <div class="card-body">
+        {!! $dataTable->table(['width' => '100%', 'class' => 'table table-responsive table-striped table-bordered']) !!}
+    </div>
+</div>
 
-@push('third_party_scripts')
-    @include('layouts.datatables_js')
+@section('js')
+    {{-- @include('layouts.datatables_js') --}}
     {!! $dataTable->scripts() !!}
-@endpush
+@endsection

@@ -1,41 +1,18 @@
-@extends('layouts.app')
+@extends('adminlte::page')
 
-@section('content')
-    <section class="content-header">
-        <div class="container-fluid">
-            <div class="row mb-2">
-                <div class="col-sm-6">
-                    <h1>$MODEL_NAME_PLURAL_HUMAN$</h1>
-                </div>
-                <div class="col-sm-6">
-                    <a class="btn btn-primary float-right"
-                       href="{{ route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.create') }}">
-                        Add New
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="content px-3">
-
-        @include('flash::message')
-
-        <div class="clearfix"></div>
-
-        <div class="card">
-            <div class="card-body p-0">
-                @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.table')
-
-                <div class="card-footer clearfix">
-                    <div class="float-right">
-                        $PAGINATE$
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
+@section('content_header')
+<h1>$MODEL_NAME_PLURAL_HUMAN$</h1>
+<h1 class="ml-auto">
+    <a class="btn btn-primary" href="{{ route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.create') }}">Add New</a>
+</h1>
 @endsection
 
+@section('content')
+@include('flash::message')
+
+<div class="card card-primary">
+    <div class="card-body">
+            @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.table')
+    </div>
+</div>
+@endsection
