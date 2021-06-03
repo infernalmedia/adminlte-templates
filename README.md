@@ -15,8 +15,6 @@ Templates for [AdminLTE Theme](https://adminlte.io/) for InfyOm Laravel Generato
 Read [Documentation](https://infyom.com/open-source/laravelgenerator/docs/8.0/adminlte-templates) for detailed installation steps and usage.
 ## Inclusion in IM projects
 
-Run `composer require infyomlabs/adminlte-templates:dev-laravel9`
-
 Add this entry in `composer.json` :
 
 ```
@@ -27,3 +25,7 @@ Add this entry in `composer.json` :
         }
     ],
 ```
+
+Run `composer require infyomlabs/adminlte-templates:dev-laravel9`
+
+Enjoy !
