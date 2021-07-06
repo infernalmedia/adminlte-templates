@@ -1,14 +1,18 @@
 @extends('adminlte::page')
 
 @section('content_header')
-<h1>
-    @lang('models/$MODEL_NAME_PLURAL_CAMEL$.plural')
-</h1>
-<h1 class="ml-auto">
-    <a class="btn btn-primary"  href="{{ route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.create') }}">
-        <i class="fa fa-plus mr-2"></i> @lang('crud.add_new')
-    </a>
-</h1>
+<div class="row mb-2">
+    <div class="col-sm-6">
+        <h1>
+            @lang('models/$MODEL_NAME_PLURAL_CAMEL$.plural')
+        </h1>
+    </div>
+    <div class="col-sm-6">
+        <a class="float-sm-right btn btn-primary" href="{{ route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.create') }}">
+            <i class="fa fa-plus mr-2"></i> @lang('crud.add_new')
+        </a>
+    </div>
+</div>
 @endsection
 
 @section('content')
@@ -16,7 +20,7 @@
 
 <div class="card card-primary">
     <div class="card-body">
-            @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.table')
+        @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.table')
     </div>
 </div>
 @endsection
