@@ -1,6 +1,6 @@
-{{-- @section('css')
-    @include('layouts.datatables_css')
-@endsection --}}
+@push('third_party_stylesheets')
+    @includeIf('layouts.datatables_css')
+@endpush
 
 <div class="card">
     <div class="card-body">
