@@ -6,12 +6,3 @@
     </div>
     {!! Form::date('$FIELD_NAME$', null, ['class' => 'form-control','id'=>'$FIELD_NAME$']) !!}
 </div>
-
-@push('scripts')
-<script type="text/javascript">
-    $('#$FIELD_NAME$').datetimepicker({
-            format: 'YYYY-MM-DD HH:mm:ss',
-            useCurrent: false
-        });
-</script>
-@endpush
