@@ -1,18 +1,9 @@
 @extends('adminlte::page')
 
 @section('content_header')
-<div class="row mb-2">
-    <div class="col-sm-6">
-        <h1>
-            @lang('models/$MODEL_NAME_PLURAL_CAMEL$.singular')
-        </h1>
-    </div>
-    <div class="col-sm-6">
-        <a class="float-sm-right btn btn-secondary" href="{{ route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.index') }}">
-            <i class="fa fa-arrow-left mr-2"></i> @lang('crud.back_to_list')
-        </a>
-    </div>
-</div>
+<x-page-header
+    form-type="creation"
+    model="$MODEL_NAME_PLURAL_CAMEL$" />
 @endsection
 
 @section('content')
@@ -22,7 +13,7 @@
     <div class="col">
         {!! Form::open(['id' => 'main-form', 'route' => '$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.store']) !!}
 
-            @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.fields')
+        @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.fields')
 
         {!! Form::close() !!}
     </div>

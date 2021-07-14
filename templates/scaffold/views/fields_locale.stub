@@ -1,6 +1,8 @@
 <div class="card">
     <div class="card-body">
-        $FIELDS$
+        <div class="row">
+            $FIELDS$
+        </div>
     </div>
 
     <div class="card-footer">
@@ -8,7 +10,8 @@
             <!-- Submit Field -->
             <div class="form-group col-sm-12">
                 {!! Form::submit(__('crud.save'), ['class' => 'btn btn-success']) !!}
-                <a href="{{ route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.index') }}" class="btn btn-secondary">@lang('crud.cancel')</a>
+                <a href="{{ route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.index') }}"
+                    class="btn btn-secondary">@lang('crud.cancel')</a>
             </div>
         </div>
     </div>

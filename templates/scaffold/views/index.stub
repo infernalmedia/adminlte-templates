@@ -1,18 +1,9 @@
 @extends('adminlte::page')
 
 @section('content_header')
-<div class="row mb-2">
-    <div class="col-sm-6">
-        <h1>
-            $MODEL_NAME_PLURAL_HUMAN$
-        </h1>
-    </div>
-    <div class="col-sm-6">
-        <a class="float-sm-right btn btn-primary" href="{{ route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.create') }}">Add New</a>
-            <i class="fa fa-arrow-left mr-2"></i> @lang('crud.back_to_list')
-        </a>
-    </div>
-</div>
+<x-page-header
+    model="$MODEL_NAME_PLURAL_CAMEL$"
+    :count="$count ?? null" />
 @endsection
 
 @section('content')

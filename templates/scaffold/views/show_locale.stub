@@ -1,19 +1,17 @@
 @extends('adminlte::page')
 
+@section('content_header')
+<x-page-header
+    :back-btn="true"
+    model="$MODEL_NAME_PLURAL_CAMEL$" />
+@endsection
+
 @section('content')
 <div class="row mb-2">
-    <div class="col-sm-6">
-        <h1>
-            @lang('models/$MODEL_NAME_PLURAL_CAMEL$.singular')
-        </h1>
-        <div class="card card-primary">
-            <div class="card-body">
-                <div class="row" style="padding-left: 20px">
-                    @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.show_fields')
-                    <a href="{{ route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_CAMEL$.index') }}" class="btn btn-secondary">
-                        @lang('crud.back')
-                    </a>
-                </div>
+    <div class="card card-primary col-sm-6">
+        <div class="card-body">
+            <div class="row">
+                @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.show_fields')
             </div>
         </div>
     </section>
@@ -27,4 +25,5 @@
             </div>
         </div>
     </div>
+</div>
 @endsection
