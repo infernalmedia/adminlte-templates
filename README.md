@@ -26,4 +26,6 @@ And run `composer require infyomlabs/adminlte-templates:inertia-table-laravel10`
 
 Make sure to have `<x-page-header>` component from [this repo](https://gitlab.com/infernalmedia/infernal-components)
 
+Make sure to have `<x-page-header>` component from [this repo](https://gitlab.com/infernalmedia/infernal-components)
+
 Enjoy !
