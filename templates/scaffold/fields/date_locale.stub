@@ -1,6 +1,6 @@
 <!-- $FIELD_NAME_TITLE$ Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('$FIELD_NAME$', __('models/$TABLE_NAME$.fields.$FIELD_NAME$').':') !!}
+    {!! Form::label('$FIELD_NAME$', __('models/$TABLE_NAME$.fields.$FIELD_NAME$')) !!}
     <div class="input-group-prepend">
         <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
     </div>
@@ -8,10 +8,10 @@
 </div>
 
 @push('scripts')
-    <script type="text/javascript">
-        $('#$FIELD_NAME$').datetimepicker({
+<script type="text/javascript">
+    $('#$FIELD_NAME$').datetimepicker({
             format: 'YYYY-MM-DD HH:mm:ss',
             useCurrent: false
         });
-    </script>
+</script>
 @endpush
