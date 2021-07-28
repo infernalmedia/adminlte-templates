@@ -1,5 +1,6 @@
 <!-- $FIELD_NAME_TITLE$ Field -->
 <div class="form-group form-check col-sm-12">
-    {!! Form::label('$FIELD_NAME$', __('models/$TABLE_NAME$.fields.$FIELD_NAME$').':',  ['class' => 'custom-control-label']) !!}
-$CHECKBOXES$
+    {!! Form::label('$FIELD_NAME$', __('models/$TABLE_NAME$.fields.$FIELD_NAME$'),
+    ['class' => 'custom-control-label']) !!}
+    $CHECKBOXES$
 </div>
