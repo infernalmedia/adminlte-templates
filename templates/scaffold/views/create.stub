@@ -23,5 +23,5 @@
 
 @section('js')
 <script type="text/javascript" src="{{ asset('vendor/jsvalidation/js/jsvalidation.js')}}"></script>
-{!! JsValidator::formRequest('App\Http\Requests\Create$MODEL_NAME_CAMEL$Request', '#main-form'); !!}
+{!! JsValidator::formRequest('App\Http\Requests\Create$MODEL_NAME$Request', '#main-form'); !!}
 @endsection
