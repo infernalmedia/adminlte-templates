@@ -2,6 +2,12 @@
 
 # AdminLTE Templates for InfyOm Laravel Generator
 
+Templates for [AdminLTE Theme](https://adminlte.io/) for InfyOm Laravel Generator.  
+
+## Documentation
+
+Read [Documentation](https://infyom.com/open-source/laravelgenerator/docs/8.0/adminlte-templates) for detailed installation steps and usage.
+
 ## Inclusion in IM projects
 
 Add this entry in `composer.json` :
