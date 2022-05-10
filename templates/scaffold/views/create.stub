@@ -21,7 +21,7 @@
 </div>
 @endsection
 
-@section('js')
+@push('scripts')
 <script type="text/javascript" src="{{ asset('vendor/jsvalidation/js/jsvalidation.js')}}"></script>
 {!! JsValidator::formRequest('App\Http\Requests\Create$MODEL_NAME$Request', '#main-form'); !!}
-@endsection
+@endpush
