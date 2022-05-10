@@ -1,6 +1,6 @@
-@push('third_party_stylesheets')
+{{-- @push('third_party_stylesheets')
     @includeIf('layouts.datatables_css')
-@endpush
+@endpush --}}
 
 <div class="card">
     <div class="card-body">
@@ -8,7 +8,7 @@
     </div>
 </div>
 
-@section('js')
+@push('scripts')
     {{-- @include('layouts.datatables_js') --}}
     {!! $dataTable->scripts() !!}
-@endsection
+@push
