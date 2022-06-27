@@ -1,14 +1,5 @@
-{{-- @push('third_party_stylesheets')
-    @includeIf('layouts.datatables_css')
-@endpush --}}
-
-<div class="card">
-    <div class="card-body">
-        {!! $dataTable->table(['width' => '100%', 'class' => 'table table-responsive table-striped table-bordered']) !!}
-    </div>
+<div id="dataTable" data-page="{{ json_encode($page) }}">
 </div>
-
-@push('scripts')
-    {{-- @include('layouts.datatables_js') --}}
-    {!! $dataTable->scripts() !!}
-@push
+@push('js')
+<script src="{{ mix('js/dataTable.js') }}"></script>
+@endpush
