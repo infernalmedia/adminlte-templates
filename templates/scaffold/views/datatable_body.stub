@@ -1,5 +1,5 @@
 <div id="dataTable" data-page="{{ json_encode($page) }}">
 </div>
 @push('js')
-<script src="{{ mix('js/dataTable.js') }}"></script>
+<script src="{{ mix('js/inertiaDataTable.js') }}"></script>
 @endpush
