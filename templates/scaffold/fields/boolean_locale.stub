@@ -2,7 +2,7 @@
 <div class="form-group col-sm-6">
     <div class="custom-control custom-switch">
         {!! Form::checkbox('$FIELD_NAME$', 1, true, ['id' => '$FIELD_NAME$','class' => 'custom-control-input']) !!}
-        {!! Form::label('$FIELD_NAME$', __('models/$TABLE_NAME$.fields.$FIELD_NAME$'),
+        {!! Form::label('$FIELD_NAME$', __('models/$MODEL_NAME_PLURAL_CAMEL$.fields.$FIELD_NAME$'),
         ['class' => 'custom-control-label']) !!}
         <!-- remove {, true} to make it unchecked by default -->
     </div>
