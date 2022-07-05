@@ -4,7 +4,7 @@
         {!! Form::hidden('$FIELD_NAME$', 0) !!}
         {!! Form::checkbox('$FIELD_NAME$', '$CHECKBOX_VALUE$', null,
         ['id' => '$FIELD_NAME$','class' => 'custom-control-input']) !!} $CHECKBOX_VALUE$
-        {!! Form::label('$FIELD_NAME$', __('models/$TABLE_NAME$.fields.$FIELD_NAME$'),
+        {!! Form::label('$FIELD_NAME$', __('models/$MODEL_NAME_PLURAL_CAMEL$.fields.$FIELD_NAME$'),
         ['class' => 'custom-control-label']) !!}
     </div>
 </div>
