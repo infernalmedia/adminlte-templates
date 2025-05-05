@@ -1,5 +1,5 @@
 <div class="card">
     <div class="card-body">
-        <livewire:$MODEL_NAME_DASHED$-table />
+        <livewire:$MODEL_NAME_PLURAL_DASHED$-table />
     </div>
 </div>
